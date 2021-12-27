@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:quiz_app/components/welcome_screen/lets_play_button.dart';
 import 'package:quiz_app/components/welcome_screen/name_field.dart';
 import 'package:quiz_app/components/welcome_screen/title.dart';
-
-import 'package:websafe_svg/websafe_svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -13,7 +12,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.cover),
+          SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill),
           Align(
             alignment: Alignment.center,
             child: Container(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz_app/constants.dart';
 
-import 'package:websafe_svg/websafe_svg.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
 
 class GameScreen extends StatefulWidget {
@@ -15,7 +15,7 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          WebsafeSvg.asset("assets/icons/bg.svg", fit: BoxFit.cover),
+          SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.cover),
           Container(
             padding: const EdgeInsets.all(15),
             height: MediaQuery.of(context).size.height,
